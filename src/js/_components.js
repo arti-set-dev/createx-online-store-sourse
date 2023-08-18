@@ -1,0 +1,16 @@
+console.log('components');
+import "./components/select";
+import "./components/sliders";
+import "./components/accordions";
+import "./components/range-slider";
+import "./components/tabs";
+import "./components/dynamic-adaptive";
+import "./components/gallery";
+import "./components/modal";
+import "./components/timer";
+import "./components/stepper";
+import "./components/megamenu";
+import "./components/cart";
+import "./components/wishlist";
+import "./components/product-search";
+import "./components/filter-product";

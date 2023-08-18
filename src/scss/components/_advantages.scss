@@ -1,0 +1,109 @@
+.advantages {
+  padding-top: 120px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 14px;
+    width: 100%;
+    gap: 20px;
+
+    @include tablet {
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    @include flex-all-center;
+
+    flex-direction: column;
+
+    &::before {
+      @include pseudo;
+      @include bg-auto;
+
+      margin-bottom: 24px;
+      width: 48px;
+      height: 48px;
+      transition: transform var(--ui-transition) ease;
+    }
+
+    &.anim-item {
+      @include scrollAnimList(0.4, ease, 8, 0.2, 0.4);
+
+      opacity: 0;
+      transform: translateY(20px);
+
+      &--show {
+        opacity: 1;
+        transform: initial;
+      }
+    }
+
+    @include hover {
+      &::before {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__item--1 {
+    &::before {
+      background-image: url("../img/ic-delivery.svg");
+    }
+  }
+
+  &__accent {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-900);
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--gray-700);
+  }
+
+  &__item--line {
+    max-width: 1px;
+    background:
+      linear-gradient(
+        315deg,
+        rgb(218 219 221 / 0%) 0%,
+        rgb(218 219 221 / 50%) 12.33%,
+        #dadbdd 51.91%,
+        rgb(218 219 221 / 50%) 87.85%,
+        rgb(218 219 221 / 0%) 100%
+      );
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item--2 {
+    &::before {
+      background-image: url("../img/ic-call-center.svg");
+    }
+  }
+
+  &__item--3 {
+    &::before {
+      background-image: url("../img/ic-shield.svg");
+    }
+  }
+
+  &__item--4 {
+    &::before {
+      background-image: url("../img/ic-credit-card.svg");
+    }
+  }
+}

@@ -1,0 +1,216 @@
+.orders {
+  &__content-inner {
+    margin-top: 26px;
+    padding: 20px 24px;
+    width: 100%;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 21px;
+    gap: 15px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 263px;
+    gap: 13px;
+
+    @include mobile {
+      justify-content: flex-end;
+    }
+  }
+
+  .choices {
+    width: 100%;
+    max-width: 170px;
+  }
+
+  &__desc {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-800);
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 24px 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  &__btn {
+    display: grid;
+    justify-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr 1fr 20px;
+    gap: 16px;
+
+    span,
+    time {
+      pointer-events: none;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+
+    @include mobile {
+      gap: 11px;
+    }
+  }
+
+  &__btn-icon {
+    height: 2px;
+
+    @include tablet {
+      flex-shrink: 0;
+    }
+  }
+
+  &__review-item {
+    justify-items: initial;
+    grid-template-columns: 335px 1fr 1fr auto;
+    min-height: 112px;
+    gap: 60px;
+
+    @include small-desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+    }
+  }
+
+  &__review-product {
+    max-width: initial;
+    gap: 40px;
+
+    @include small-desktop {
+      max-width: 242px;
+      gap: 15px;
+    }
+  }
+
+  &__review-picture {
+    @include small-desktop {
+      flex-shrink: 0;
+    }
+  }
+
+  &__btn-price {
+    font-size: 16px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__btn-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-900);
+
+    @include tablet {
+      width: 100%;
+      max-width: 131px;
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__btn-meta-desc {
+    @include bg-auto;
+
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-700);
+    background-image: url("../img/svg/clock.svg");
+    background-position: left center;
+
+    @include tablet {
+      padding-left: 28px;
+      width: 100%;
+      max-width: 147px;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    @include mobile {
+      padding-left: 21px;
+      font-size: 10px;
+    }
+  }
+
+  &__status {
+    width: fit-content;
+
+    @include tablet {
+      width: 100%;
+      max-width: 94px;
+    }
+
+    @include mobile {
+      padding: 1px 5px;
+      max-width: 61px;
+      font-size: 10px;
+    }
+  }
+
+  &__item-track {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  &__accent {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: right;
+    color: var(--gray-900);
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__btn-track {
+    padding: 0 26px;
+    font-size: 12px;
+    line-height: 36px;
+
+    @include mobile {
+      padding: 0 10px;
+    }
+  }
+
+  &__btn-more {
+    margin: 0 auto;
+    padding-top: 57px;
+  }
+}

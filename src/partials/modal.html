@@ -1,0 +1,590 @@
+<div class="modal" data-modal-overlay>
+  <div class="modal-window" data-modal-target="login" role="dialog" aria-modal="true"
+    aria-describedby="description-login">
+    <div class="modal__head">
+      <button type="button" class="btn-reset btn-close modal__close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <h3 id="description-login" class="title modal__title">Sign in</h3>
+      <span class="modal__inert">Sign in to your account using email and password provided during registration.</span>
+    </div>
+    <div class="modal__content">
+      <form action="/" method="get" class="form modal__form modal__form--login">
+        <div class="modal__form-top">
+          <label class="label modal__label">
+            <span class="modal__desc">Email</span>
+            <input type="email" class="input-reset input input--email" aria-label="Your working email"
+              placeholder="Your working email">
+          </label>
+          <div class="modal__label">
+            <span class="modal__desc">Password</span>
+            <span class="modal__inner" data-password>
+              <input type="password" class="input-reset input input--password" aria-label="password input field" placeholder="Your working password">
+              <input type="checkbox" class="input-reset btn-eye modal__btn-eye" aria-label="show password">
+            </span>
+          </div>
+        </div>
+        <div class="modal__form-bottom">
+          <label class="label modal__label modal__label--row">
+            <span class="modal__inner">
+              <input type="checkbox" class="input-reset check-mark modal__checkbox">
+              <span class="modal__desc">Keep me signed in</span>
+            </span>
+            <a href="#" class="modal__desc modal__desc--primary">Forgot password?</a>
+          </label>
+          <button type="submit" class="btn-reset btn-primary modal__btn-primary">Sign in</button>
+          <div class="modal__inner">
+            <span class="modal__desc">Don't have an account?</span>
+            <button type="button" class="btn-reset modal__desc modal__desc--primary" data-modal="register">Sign
+              up</button>
+          </div>
+        </div>
+      </form>
+      <div class="modal__social-wrapper">
+        <span class="modal__inert">Or sign in with</span>
+        <ul class="list-reset social modal__social" title="Our social networks">
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our facebook profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--in">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our google profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--google">
+                <use xlink:href="img/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our twitter profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--tw">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our pinterest profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--ln">
+                <use xlink:href="img/sprite.svg#linked-In"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal-window" data-modal-target="register" role="dialog" aria-modal="true"
+    aria-describedby="description-register">
+    <div class="modal__head">
+      <button type="button" class="btn-reset btn-close modal__close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <h3 id="description-register" class="title modal__title">Sign up</h3>
+      <span class="modal__inert">Registration takes less than a minute but gives you full control over your
+        orders.</span>
+    </div>
+    <div class="modal__content">
+      <form action="/" method="get" class="form modal__form modal__form--registration">
+        <div class="modal__form-top">
+          <label class="label modal__label">
+            <span class="modal__desc">Full Name</span>
+            <input type="text" class="input-reset input input--empty" aria-label="Your full name" placeholder="Your full name">
+          </label>
+          <label class="label modal__label">
+            <span class="modal__desc">Email</span>
+            <input type="email" class="input-reset input input--email" aria-label="Your working email"
+              placeholder="Your working email">
+          </label>
+          <div class="modal__label">
+            <span class="modal__desc">Password</span>
+            <span class="modal__inner" data-password>
+              <input type="password" class="input-reset input input--password" aria-label="password input field" placeholder="Your working password">
+              <input type="checkbox" class="input-reset btn-eye modal__btn-eye" aria-label="show password">
+            </span>
+          </div>
+          <div class="modal__label">
+            <span class="modal__desc">Confirm Password</span>
+            <span class="modal__inner" data-password>
+              <input type="password" class="input-reset input input--passcon" aria-label="password input field" placeholder="Your working password">
+              <input type="checkbox" class="input-reset btn-eye modal__btn-eye" aria-label="show password">
+            </span>
+          </div>
+        </div>
+        <div class="modal__form-bottom">
+          <label class="label modal__label modal__label--row">
+            <span class="modal__inner">
+              <input type="checkbox" class="input-reset check-mark modal__checkbox">
+              <span class="modal__desc">Remember me</span>
+            </span>
+          </label>
+          <button type="submit" class="btn-reset btn-primary modal__btn-primary">Sign up</button>
+          <div class="modal__inner">
+            <span class="modal__desc">Already have an account?</span>
+            <button type="button" class="btn-reset modal__desc modal__desc--primary" data-modal="login">Sign in</button>
+          </div>
+        </div>
+      </form>
+      <div class="modal__social-wrapper">
+        <span class="modal__inert">Or sign in with</span>
+        <ul class="list-reset social modal__social" title="Our social networks">
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our facebook profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--in">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our google profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--google">
+                <use xlink:href="img/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our twitter profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--tw">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social__link social__link--light"
+              aria-label="Our pinterest profile">
+              <svg class="svg social__icon modal__social-icon social__icon--light social__icon--ln">
+                <use xlink:href="img/sprite.svg#linked-In"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal-window modal-window--size-chart" role="dialog" aria-modal="true" data-modal-target="size-chart">
+    <div class="modal__head">
+      <button type="button" class="btn-reset btn-close modal__close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <h3 class="title modal__title">Size chart</h3>
+    </div>
+    <div class="tabs modal__tabs" data-tabs="size-chart">
+      <ul class="list-reset tabs__nav modal__nav">
+        <li class="tabs__nav-item modal__nav-item"><button class="btn-reset btn-border tabs__nav-btn modal__nav-btn"
+            type="button">Women</button></li>
+        <li class="tabs__nav-item modal__nav-item"><button class="btn-reset btn-border tabs__nav-btn modal__nav-btn"
+            type="button">Men</button></li>
+        <li class="tabs__nav-item modal__nav-item"><button class="btn-reset btn-border tabs__nav-btn modal__nav-btn"
+            type="button">Kids</button></li>
+      </ul>
+      <div class="tabs__content modal__content">
+        <div class="tabs__panel modal__panel">
+          <div class="size-chart">
+            <span class="size-chart__accent">Footwear</span>
+            <table class="size-chart__table">
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Europe</td>
+                <td class="size-chart__cell size-chart__cell--gray">35</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">USA</td>
+                <td class="size-chart__cell">5</td>
+                <td class="size-chart__cell">6</td>
+                <td class="size-chart__cell">6.5</td>
+                <td class="size-chart__cell">7.5</td>
+                <td class="size-chart__cell">8</td>
+                <td class="size-chart__cell">9</td>
+                <td class="size-chart__cell">10</td>
+                <td class="size-chart__cell">11</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">United Kingdom</td>
+                <td class="size-chart__cell size-chart__cell--gray">2</td>
+                <td class="size-chart__cell size-chart__cell--gray">3</td>
+                <td class="size-chart__cell size-chart__cell--gray">4</td>
+                <td class="size-chart__cell size-chart__cell--gray">5</td>
+                <td class="size-chart__cell size-chart__cell--gray">6</td>
+                <td class="size-chart__cell size-chart__cell--gray">7</td>
+                <td class="size-chart__cell size-chart__cell--gray">8</td>
+                <td class="size-chart__cell size-chart__cell--gray">9</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">China</td>
+                <td class="size-chart__cell">230/83</td>
+                <td class="size-chart__cell">235/84</td>
+                <td class="size-chart__cell">240/85</td>
+                <td class="size-chart__cell">245/86</td>
+                <td class="size-chart__cell">255/87</td>
+                <td class="size-chart__cell">260/88</td>
+                <td class="size-chart__cell">265/89</td>
+                <td class="size-chart__cell">275/90</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Russia</td>
+                <td class="size-chart__cell size-chart__cell--gray">35</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">Italy</td>
+                <td class="size-chart__cell">35</td>
+                <td class="size-chart__cell">36</td>
+                <td class="size-chart__cell">37</td>
+                <td class="size-chart__cell">38</td>
+                <td class="size-chart__cell">39</td>
+                <td class="size-chart__cell">40</td>
+                <td class="size-chart__cell">41</td>
+                <td class="size-chart__cell">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">South Korea</td>
+                <td class="size-chart__cell size-chart__cell--gray">230</td>
+                <td class="size-chart__cell size-chart__cell--gray">235</td>
+                <td class="size-chart__cell size-chart__cell--gray">240</td>
+                <td class="size-chart__cell size-chart__cell--gray">245</td>
+                <td class="size-chart__cell size-chart__cell--gray">255</td>
+                <td class="size-chart__cell size-chart__cell--gray">260</td>
+                <td class="size-chart__cell size-chart__cell--gray">265</td>
+                <td class="size-chart__cell size-chart__cell--gray">275</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs__panel modal__panel">
+          <div class="size-chart">
+            <span class="size-chart__accent">Footwear</span>
+            <table class="size-chart__table">
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Europe</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+                <td class="size-chart__cell size-chart__cell--gray">43</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">USA</td>
+                <td class="size-chart__cell">5</td>
+                <td class="size-chart__cell">6</td>
+                <td class="size-chart__cell">6.5</td>
+                <td class="size-chart__cell">7.5</td>
+                <td class="size-chart__cell">8</td>
+                <td class="size-chart__cell">9</td>
+                <td class="size-chart__cell">10</td>
+                <td class="size-chart__cell">11</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">United Kingdom</td>
+                <td class="size-chart__cell size-chart__cell--gray">2</td>
+                <td class="size-chart__cell size-chart__cell--gray">3</td>
+                <td class="size-chart__cell size-chart__cell--gray">4</td>
+                <td class="size-chart__cell size-chart__cell--gray">5</td>
+                <td class="size-chart__cell size-chart__cell--gray">6</td>
+                <td class="size-chart__cell size-chart__cell--gray">7</td>
+                <td class="size-chart__cell size-chart__cell--gray">8</td>
+                <td class="size-chart__cell size-chart__cell--gray">9</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">China</td>
+                <td class="size-chart__cell">230/83</td>
+                <td class="size-chart__cell">235/84</td>
+                <td class="size-chart__cell">240/85</td>
+                <td class="size-chart__cell">245/86</td>
+                <td class="size-chart__cell">255/87</td>
+                <td class="size-chart__cell">260/88</td>
+                <td class="size-chart__cell">265/89</td>
+                <td class="size-chart__cell">275/90</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Russia</td>
+                <td class="size-chart__cell size-chart__cell--gray">35</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">Italy</td>
+                <td class="size-chart__cell">35</td>
+                <td class="size-chart__cell">36</td>
+                <td class="size-chart__cell">37</td>
+                <td class="size-chart__cell">38</td>
+                <td class="size-chart__cell">39</td>
+                <td class="size-chart__cell">40</td>
+                <td class="size-chart__cell">41</td>
+                <td class="size-chart__cell">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">South Korea</td>
+                <td class="size-chart__cell size-chart__cell--gray">230</td>
+                <td class="size-chart__cell size-chart__cell--gray">235</td>
+                <td class="size-chart__cell size-chart__cell--gray">240</td>
+                <td class="size-chart__cell size-chart__cell--gray">245</td>
+                <td class="size-chart__cell size-chart__cell--gray">255</td>
+                <td class="size-chart__cell size-chart__cell--gray">260</td>
+                <td class="size-chart__cell size-chart__cell--gray">265</td>
+                <td class="size-chart__cell size-chart__cell--gray">275</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs__panel modal__panel">
+          <div class="size-chart">
+            <span class="size-chart__accent">Footwear</span>
+            <table class="size-chart__table">
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Europe</td>
+                <td class="size-chart__cell size-chart__cell--gray">35</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">USA</td>
+                <td class="size-chart__cell">5</td>
+                <td class="size-chart__cell">6</td>
+                <td class="size-chart__cell">6.5</td>
+                <td class="size-chart__cell">7.5</td>
+                <td class="size-chart__cell">8</td>
+                <td class="size-chart__cell">9</td>
+                <td class="size-chart__cell">10</td>
+                <td class="size-chart__cell">11</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">United Kingdom</td>
+                <td class="size-chart__cell size-chart__cell--gray">2</td>
+                <td class="size-chart__cell size-chart__cell--gray">3</td>
+                <td class="size-chart__cell size-chart__cell--gray">4</td>
+                <td class="size-chart__cell size-chart__cell--gray">5</td>
+                <td class="size-chart__cell size-chart__cell--gray">6</td>
+                <td class="size-chart__cell size-chart__cell--gray">7</td>
+                <td class="size-chart__cell size-chart__cell--gray">8</td>
+                <td class="size-chart__cell size-chart__cell--gray">9</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">China</td>
+                <td class="size-chart__cell">230/83</td>
+                <td class="size-chart__cell">235/84</td>
+                <td class="size-chart__cell">240/85</td>
+                <td class="size-chart__cell">245/86</td>
+                <td class="size-chart__cell">255/87</td>
+                <td class="size-chart__cell">260/88</td>
+                <td class="size-chart__cell">265/89</td>
+                <td class="size-chart__cell">275/90</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Russia</td>
+                <td class="size-chart__cell size-chart__cell--gray">35</td>
+                <td class="size-chart__cell size-chart__cell--gray">36</td>
+                <td class="size-chart__cell size-chart__cell--gray">37</td>
+                <td class="size-chart__cell size-chart__cell--gray">38</td>
+                <td class="size-chart__cell size-chart__cell--gray">39</td>
+                <td class="size-chart__cell size-chart__cell--gray">40</td>
+                <td class="size-chart__cell size-chart__cell--gray">41</td>
+                <td class="size-chart__cell size-chart__cell--gray">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell">Italy</td>
+                <td class="size-chart__cell">35</td>
+                <td class="size-chart__cell">36</td>
+                <td class="size-chart__cell">37</td>
+                <td class="size-chart__cell">38</td>
+                <td class="size-chart__cell">39</td>
+                <td class="size-chart__cell">40</td>
+                <td class="size-chart__cell">41</td>
+                <td class="size-chart__cell">42</td>
+              </tr>
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">South Korea</td>
+                <td class="size-chart__cell size-chart__cell--gray">230</td>
+                <td class="size-chart__cell size-chart__cell--gray">235</td>
+                <td class="size-chart__cell size-chart__cell--gray">240</td>
+                <td class="size-chart__cell size-chart__cell--gray">245</td>
+                <td class="size-chart__cell size-chart__cell--gray">255</td>
+                <td class="size-chart__cell size-chart__cell--gray">260</td>
+                <td class="size-chart__cell size-chart__cell--gray">265</td>
+                <td class="size-chart__cell size-chart__cell--gray">275</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs modal__tabs" data-tabs="size-chart2">
+      <ul class="list-reset tabs__nav modal__nav">
+        <li class="tabs__nav-item modal__nav-item"><span class="modal__nav-accent">I want to see size equivalence
+            in:</span></li>
+        <li class="tabs__nav-item modal__nav-item"><button class="btn-reset btn-border tabs__nav-btn modal__nav-btn"
+            type="button">cm</button></li>
+        <li class="tabs__nav-item modal__nav-item"><button class="btn-reset btn-border tabs__nav-btn modal__nav-btn"
+            type="button">Inches</button></li>
+      </ul>
+      <div class="tabs__content modal__content">
+        <div class="tabs__panel modal__panel">
+          <div class="size-chart">
+            <span class="size-chart__accent">Equivalence in centimetres</span>
+            <table class="size-chart__table">
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Foot length</td>
+                <td class="size-chart__cell size-chart__cell--gray">22.4 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">23 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">23.6 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">24.3 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">24.9 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">25.5 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">26.2 cm</td>
+                <td class="size-chart__cell size-chart__cell--gray">26.8 cm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs__panel modal__panel">
+          <div class="size-chart">
+            <span class="size-chart__accent">Equivalence in inches</span>
+            <table class="size-chart__table">
+              <tr class="size-chart__row">
+                <td class="size-chart__cell size-chart__cell--gray">Foot length</td>
+                <td class="size-chart__cell size-chart__cell--gray">8,8 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">9,0 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">9,0 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">9,4 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">9,4 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">9,8 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">10,2 is</td>
+                <td class="size-chart__cell size-chart__cell--gray">10,2 is</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-window" data-modal-target="review" role="dialog" aria-modal="true"
+    aria-describedby="description-review">
+    <div class="modal__head">
+      <button type="button" class="btn-reset btn-close modal__close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <h3 id="description-review" class="title modal__title">Leave a review</h3>
+    </div>
+    <div class="modal__content">
+      <form action="/" method="get" class="form modal__form modal__form--single">
+        <div class="modal__labels">
+          <label class="label modal__label">
+            <span class="modal__desc">Name</span>
+            <input type="text" class="input-reset input input--empty" aria-label="Your name" placeholder="Your name">
+          </label>
+          <label class="label modal__label">
+            <span class="modal__desc">Email</span>
+            <input type="email" class="input-reset input input--email" aria-label="Your working email"
+              placeholder="Your working email">
+          </label>
+          <label class="label modal__label">
+            <span class="modal__desc">Rating</span>
+            <select name="rating" class="select modal__select">
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </label>
+          <label class="label modal__label">
+            <span class="modal__desc">Upload a photo or video (optional)</span>
+            <span class="upload">
+              <svg class="svg upload__icon">
+                <use xlink:href="img/sprite.svg#upload"></use>
+              </svg>
+              <span class="upload__desc">Drag and drop here to upload</span>
+              <span class="upload__label">
+                <input type="file" class="input-reset visually-hidden" aria-label="Drag and drop here to upload">
+                <span class="btn-border upload__btn">Or select file</span>
+              </span>
+            </span>
+          </label>
+          <label class="label modal__label">
+            <span class="modal__desc">Review</span>
+            <textarea name="notes" class="input-reset input modal__textarea" placeholder="Write your comment"
+              aria-label="Write your comment"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn-reset btn-primary modal__btn-primary">Submit a review</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-window cart" role="dialog" aria-modal="true" data-modal-target="cart">
+    <div class="cart__head">
+      <h3 class="title cart__title">Your cart (<span data-cart-count>4</span>)</h3>
+      <button type="button" class="btn-reset btn-close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="list-reset cart__list"></ul>
+    <div class="cart__checkout">
+      <div class="cart__checkout-inner">
+        <span class="cart__checkout-inert">Subtotal:</span>
+        <span class="cart__checkout-accent" data-total-price></span>
+      </div>
+      <a href="/checkout.html" class="btn-primary">
+        <svg class="svg btn-primary__icon btn-primary__icon--card">
+          <use xlink:href="img/sprite.svg#card"></use>
+        </svg>
+        Checkout
+      </a>
+    </div>
+  </div>
+  <div class="modal-window filters" data-modal-target="filters" role="dialog" aria-modal="true"
+    aria-describedby="description-login">
+    <div class="filters__head">
+      <h3 class="title modal__title">Your filters</h3>
+      <button type="button" class="btn-reset btn-close" aria-label="Close modal window" data-modal-close>
+        <svg class="svg btn-close__icon">
+          <use xlink:href="img/sprite.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="filters__content">
+
+    </div>
+  </div>
+</div>

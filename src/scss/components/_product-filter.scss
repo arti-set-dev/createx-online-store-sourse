@@ -1,0 +1,155 @@
+.product-filter {
+  max-width: 255px;
+
+  &__btn-primary {
+    width: 100%;
+    font-size: 14px;
+    line-height: 44px;
+    color: var(--white);
+  }
+
+  &__list {
+    padding-top: 13px;
+
+    &--hide {
+      overflow: hidden;
+      height: 0;
+      visibility: hidden;
+    }
+
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    padding: 20px 0;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-900);
+  }
+
+  &__btn-desc {
+    pointer-events: none;
+  }
+
+  &__content {
+    &.show {
+      overflow: initial;
+    }
+  }
+
+  &__form {
+    position: relative;
+    margin-top: 16px;
+  }
+
+  &__btn-search {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__content-list {
+    margin-top: 16px;
+    max-height: 174px;
+
+    .simplebar-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &--grid {
+      .simplebar-content {
+        display: grid;
+        column-gap: 4px;
+        grid-template-columns: repeat(4, 1fr);
+        padding-right: 15px;
+        max-height: 170px;
+        row-gap: 8px;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800);
+  }
+
+  &__count {
+    color: var(--gray-600);
+  }
+
+  &__label--column {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__checkbox {
+    width: 32px;
+    height: 32px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__label-desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-700);
+  }
+
+  &__range-slider {
+    margin-top: 35px;
+    margin-bottom: 21px;
+  }
+
+  &__inputs {
+    position: relative;
+    display: flex;
+    gap: 35px;
+
+    &::before {
+      @include pseudo;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 7px;
+      height: 1px;
+      background-color: var(--gray-800);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__input {
+    padding: 7px 11px;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+}

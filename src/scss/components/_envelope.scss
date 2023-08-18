@@ -1,0 +1,56 @@
+.envelope {
+  padding: 16px 0;
+  background-color: var(--gray-200);
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__black {
+    @include bg-auto;
+
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800);
+  }
+
+  &__gray {
+    @include bg-auto;
+
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-600);
+  }
+}
+
+.filter-control {
+  @include hide-scrollbar;
+
+  display: flex;
+  overflow: auto;
+  max-width: 350px;
+  gap: 20px;
+
+  &__close {
+    padding-left: 26px;
+    width: max-content;
+    background-image: url("../img/cross.svg");
+    background-position: left center;
+    cursor: pointer;
+  }
+
+  &__close-all {
+    padding-left: 26px;
+    width: max-content;
+    background-image: url("../img/cross-black.svg");
+    background-position: left center;
+    cursor: pointer;
+  }
+}

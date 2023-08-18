@@ -1,0 +1,70 @@
+<div class="profile account__content" data-barba="container" data-barba-namespace="profile">
+  <div class="profile__head">
+    <h1 class="title account__title">My profile</h1>
+    <button type="button" class="btn-reset btn-delete">
+      <svg class="svg btn-delete__icon">
+        <use xlink:href="img/sprite.svg#delete"></use>
+      </svg>
+      Delete account
+    </button>
+  </div>
+  <form action="/" method="post" class="form profile__form">
+    <div class="profile__labels">
+      <label class="label profile__label">
+        <span class="profile__label-desc">First name</span>
+        <input type="text" class="input-reset input account__input" placeholder="Your first name" aria-label="Your first name">
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">Last name</span>
+        <input type="text" class="input-reset input account__input" placeholder="Your last name" aria-label="Your last name">
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">Email</span>
+        <input type="email" class="input-reset input account__input" placeholder="Your working email" aria-label="Your working email">
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">Phone</span>
+        <input type="tel" class="input-reset input account__input" placeholder="Your phone number" aria-label="Your phone number">
+      </label>
+      <div class="profile__label">
+        <span class="profile__label-desc">New Password</span>
+        <span class="profile__input-wrapper" data-password>
+          <input type="password" class="input-reset input input--password account__input" placeholder="Enter password" aria-label="Password field">
+          <input type="checkbox" class="input-reset btn-eye profile__input-btn" aria-label="Show password">
+        </span>
+      </div>
+      <div class="profile__label">
+        <span class="profile__label-desc">Confirm Password</span>
+        <span class="profile__input-wrapper" data-password>
+          <input type="password" class="input-reset input input--passcon account__input" placeholder="Confirm the password" aria-label="Password confirmation field">
+          <input type="checkbox" class="input-reset btn-eye profile__input-btn" aria-label="Show password">
+        </span>
+      </div>
+      <label class="label profile__label">
+        <span class="profile__label-desc">Country</span>
+        <select name="country" class="select account__select">
+          <option value="Germany">Germany</option>
+          <option value="USA">USA</option>
+          <option value="Russia">Russia</option>
+        </select>
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">City</span>
+        <select name="country" class="select account__select">
+          <option value="Germany">Germany</option>
+          <option value="USA">USA</option>
+          <option value="Russia">Russia</option>
+        </select>
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">Address</span>
+        <input type="text" class="input-reset input account__input" placeholder="Your address" aria-label="Address field">
+      </label>
+      <label class="label profile__label">
+        <span class="profile__label-desc">ZIP Code</span>
+        <input type="text" class="input-reset input account__input" placeholder="Your ZIP code" aria-label="field for entering ZIP code">
+      </label>
+    </div>
+    <button type="submit" class="btn-reset btn-primary">Save changes</button>
+  </form>
+</div>

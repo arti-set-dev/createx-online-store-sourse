@@ -1,0 +1,16 @@
+.blockquote {
+  position: relative;
+  padding-left: 58px;
+
+  &::before {
+    @include pseudo;
+    @include bg-auto;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 20px;
+    background-image: url("../img/svg/braces.svg");
+  }
+}

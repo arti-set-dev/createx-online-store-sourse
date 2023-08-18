@@ -1,0 +1,43 @@
+.brands {
+  padding: 118px 0;
+
+  &__list {
+    @include hide-scrollbar;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: auto;
+    gap: 100px;
+  }
+
+  &__item {
+    &.anim-item {
+      @include scrollAnimList(0.4, ease, 7, 0.2, 0.4);
+
+      opacity: 0;
+      transform: translateX(20px);
+
+      &--show {
+        opacity: 1;
+        transform: initial;
+      }
+    }
+  }
+
+  &__picture {
+    width: max-content;
+  }
+
+  &__image {
+    transition: transform var(--ui-transition) ease, filter var(--ui-transition) ease;
+
+    @include hover {
+      filter: drop-shadow(5px 5px 5px var(--gray-500));
+      transform: scale(1.1);
+    }
+  }
+
+  @include mobile {
+    padding: 50px 0;
+  }
+}

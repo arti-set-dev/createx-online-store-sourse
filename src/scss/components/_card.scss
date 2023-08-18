@@ -1,0 +1,135 @@
+.card {
+  overflow: hidden;
+  border-radius: 4px;
+  max-width: 390px;
+
+  &__top {
+    position: relative;
+  }
+
+  &__link {
+    &--title {
+      display: block;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__wishlist {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 5;
+  }
+
+  &__rating {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 5;
+  }
+
+  &__discount {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 5;
+  }
+
+  &__control {
+    &::after {
+      font-weight: 700;
+      font-size: 23px;
+      color: var(--gray-800);
+    }
+  }
+
+  &__bottom {
+    padding: 16px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    display: -webkit-box;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray-800);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  &__additional {
+    overflow: hidden;
+    padding-top: 20px;
+    height: 0;
+    min-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      visibility var(--ui-transition) ease,
+      opacity var(--ui-transition) ease,
+      min-height var(--ui-transition) ease;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  &__fieldset {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__radio {
+    &--danger {
+      border: 1px solid var(--danger);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    font-size: 14px;
+    line-height: 44px;
+  }
+
+  &:hover {
+    z-index: 10;
+    box-shadow:
+      0 4px 4px -4px rgb(30 33 44 / 5%),
+      0 12px 10px -6px rgb(154 156 165 / 8%),
+      0 30px 24px -10px rgb(154 156 165 / 10%),
+      0 80px 80px -20px rgb(154 156 165 / 16%);
+
+    .card__additional {
+      height: 100%;
+      min-height: 80px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &--abs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: fill-available;
+  }
+
+  &--white {
+    background-color: var(--white);
+  }
+
+  &--gray {
+    background-color: var(--gray-300);
+  }
+}

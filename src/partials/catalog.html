@@ -1,0 +1,642 @@
+<section class="catalog">
+  <div class="container catalog__container">
+    <h1 class="visually-hidden">catalog</h1>
+    <aside class="aside product-filter catalog__product-filter">
+      <button type="button" class="btn-reset btn-primary product-filter__btn-primary">
+        <svg class="svg btn-primary__icon">
+          <use xlink:href="img/sprite.svg#filter-icon"></use>
+        </svg>
+        <span class="btn-primary__desc">Hide filters</span>
+      </button>
+      <div class="accordion-list accordion-list--filters product-filter__list" data-dynamic-state="filters__content, 1024, first">
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            <span class="product-filter__btn-desc">Clothes</span>
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <form action="/" method="post" class="form product-filter__form">
+              <input type="search" class="input-reset input product-filter__input" placeholder="Search the clothes type"
+                aria-label="Enter product category">
+              <button type="submit" class="btn-reset btn-search product-filter__btn-search"
+                aria-label="Search"></button>
+            </form>
+            <ul class="list-reset product-filter__content-list" data-simplebar>
+
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            Size
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <ul class="list-reset product-filter__content-list" data-simplebar>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    XS
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    S
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    M
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    L
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    XL
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Plus Size
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            Color
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <ul class="list-reset product-filter__content-list product-filter__content-list--grid" data-simplebar>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--black product-filter__checkbox">
+                  <span class="product-filter__label-desc">Black</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--blue-gray product-filter__checkbox">
+                  <span class="product-filter__label-desc">Blue-gray</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--yellow product-filter__checkbox">
+                  <span class="product-filter__label-desc">Yellow</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--red product-filter__checkbox">
+                  <span class="product-filter__label-desc">Red</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--dark-blue product-filter__checkbox">
+                  <span class="product-filter__label-desc">Dark blue</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--beige product-filter__checkbox">
+                  <span class="product-filter__label-desc">Beige</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--brown product-filter__checkbox">
+                  <span class="product-filter__label-desc">Brown</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--gray product-filter__checkbox">
+                  <span class="product-filter__label-desc">Gray</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--purple product-filter__checkbox">
+                  <span class="product-filter__label-desc">Purple</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--green product-filter__checkbox">
+                  <span class="product-filter__label-desc">Green</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--orange product-filter__checkbox">
+                  <span class="product-filter__label-desc">Orange</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--white product-filter__checkbox">
+                  <span class="product-filter__label-desc">White</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--black product-filter__checkbox">
+                  <span class="product-filter__label-desc">Black</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--blue-gray product-filter__checkbox">
+                  <span class="product-filter__label-desc">Blue-gray</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--yellow product-filter__checkbox">
+                  <span class="product-filter__label-desc">Yellow</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--red product-filter__checkbox">
+                  <span class="product-filter__label-desc">Red</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--dark-blue product-filter__checkbox">
+                  <span class="product-filter__label-desc">Dark blue</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--beige product-filter__checkbox">
+                  <span class="product-filter__label-desc">Beige</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--brown product-filter__checkbox">
+                  <span class="product-filter__label-desc">Brown</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--gray product-filter__checkbox">
+                  <span class="product-filter__label-desc">Gray</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--purple product-filter__checkbox">
+                  <span class="product-filter__label-desc">Purple</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--green product-filter__checkbox">
+                  <span class="product-filter__label-desc">Green</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--orange product-filter__checkbox">
+                  <span class="product-filter__label-desc">Orange</span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label product-filter__label--column">
+                  <input type="checkbox" name="color" value="black"
+                    class="input-reset radio-color radio-color--white product-filter__checkbox">
+                  <span class="product-filter__label-desc">White</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            Material
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <form action="/" method="post" class="form product-filter__form">
+              <input type="search" class="input-reset input product-filter__input" placeholder="Search the clothes type"
+                aria-label="Enter product category">
+              <button type="submit" class="btn-reset btn-search product-filter__btn-search"
+                aria-label="Search"></button>
+            </form>
+            <ul class="list-reset product-filter__content-list" data-simplebar>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Cotton
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Synthetics
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Nappa leather
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Leather
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Cashmere
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Denim
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Cotton
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Synthetics
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Nappa leather
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Leather
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Cashmere
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Denim
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            Brand
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <form action="/" method="post" class="form product-filter__form">
+              <input type="search" class="input-reset input product-filter__input" placeholder="Search the clothes type"
+                aria-label="Enter product category">
+              <button type="submit" class="btn-reset btn-search product-filter__btn-search"
+                aria-label="Search"></button>
+            </form>
+            <ul class="list-reset product-filter__content-list" data-simplebar>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Adidas
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Ann Taylor
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Armani
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Banana Republic
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Calvin Klein
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Columbia
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Adidas
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Ann Taylor
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Armani
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Banana Republic
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Calvin Klein
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+              <li class="product-filter__content-item">
+                <label class="label product-filter__label">
+                  <input type="checkbox" class="input-reset check-mark">
+                  <span class="product-filter__desc">
+                    Columbia
+                    <span class="product-filter__count">(0)</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item product-filter__item">
+          <button type="button" class="btn-reset accordion-btn product-filter__btn">
+            Price
+            <span class="arrow-icon product-filter__icon"></span>
+          </button>
+          <div class="accordion-content product-filter__content">
+            <div class="range-slider product-filter__range-slider"></div>
+            <div class="product-filter__inputs">
+              <input type="text" class="input-reset input product-filter__input product-filter__input--left"
+                maxlength="3" aria-label="Enter the minimum price">
+              <input type="text" class="input-reset input product-filter__input product-filter__input--right"
+                maxlength="3" aria-label="Enter maximum price">
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="catalog__content">
+      <div class="catalog__control">
+        <button type="button" class="btn-reset btn-primary catalog__btn-primary catalog__btn-primary--mobile" data-modal="filters">
+          <svg class="svg btn-primary__icon">
+            <use xlink:href="img/sprite.svg#filter-icon"></use>
+          </svg>
+          Show filters
+        </button>
+        <div class="catalog__selects">
+          <div class="catalog__select-wrapper">
+            <span class="catalog__select-desc">Sort by</span>
+            <select name="sorting" class="select catalog__select catalog__select--sorting">
+              <option value="popularity" selected>popularity</option>
+              <option value="rating">rating</option>
+            </select>
+          </div>
+          <div class="catalog__select catalog__select-wrapper">
+            <span class="catalog__select-desc">Show</span>
+            <select name="quantity" class="select catalog__select catalog__select--quantity">
+              <option value="6" selected>6</option>
+              <option value="8">8</option>
+              <option value="12">12</option>
+            </select>
+            <span class="catalog__select-desc catalog__select-desc--dim">products per page</span>
+          </div>
+        </div>
+        <ul class="list-reset page-nav catalog__page-nav">
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link page-nav__link--active">1</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">2</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">3</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">...</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">10</a>
+          </li>
+          <li class="page-nav__item">
+            <span class="page-nav__link page-nav__link--next">
+              <svg class="svg page-nav__icon">
+                <use xlink:href="img/sprite.svg#right"></use>
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <ul class="list-reset catalog__list">
+
+      </ul>
+      <div class="catalog__control">
+        <button type="button" class="btn-reset btn-primary catalog__btn-primary catalog__btn-primary--mobile" data-modal="filters">
+          <svg class="svg btn-primary__icon">
+            <use xlink:href="img/sprite.svg#filter-icon"></use>
+          </svg>
+          Show filters
+        </button>
+        <div class="catalog__selects">
+          <div class="catalog__select-wrapper">
+            <span class="catalog__select-desc">Sort by</span>
+            <select name="sorting" class="select catalog__select catalog__select--sorting">
+              <option value="popularity" selected>popularity</option>
+              <option value="rating">rating</option>
+            </select>
+          </div>
+          <div class="catalog__select catalog__select-wrapper">
+            <span class="catalog__select-desc">Show</span>
+            <select name="quantity" class="select catalog__select catalog__select--quantity">
+              <option value="6" selected>6</option>
+              <option value="8">8</option>
+              <option value="12">12</option>
+            </select>
+            <span class="catalog__select-desc catalog__select-desc--dim">products per page</span>
+          </div>
+        </div>
+        <ul class="list-reset page-nav catalog__page-nav">
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link page-nav__link--active">1</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">2</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">3</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">...</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">10</a>
+          </li>
+          <li class="page-nav__item">
+            <span class="page-nav__link page-nav__link--next">
+              <svg class="svg page-nav__icon">
+                <use xlink:href="img/sprite.svg#right"></use>
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

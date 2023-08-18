@@ -1,0 +1,46 @@
+.page-nav {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-800);
+    transition: color var(--ui-transition) ease;
+
+    &--active {
+      color: var(--primary);
+    }
+
+    &--next {
+      cursor: pointer;
+    }
+
+    @include hover {
+      color: var(--primary);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transition: fill var(--ui-transition) ease;
+
+    @include hover {
+      fill: var(--primary);
+    }
+  }
+
+  &.anim-item {
+    @include scrollAnimItem(0.4, ease, 1);
+
+    opacity: 0;
+    transform: translateY(20px);
+
+    &--show {
+      opacity: 1;
+      transform: initial;
+    }
+  }
+}

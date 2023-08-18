@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  gap: 2px;
+
+  &__star {
+    @include bg-auto;
+
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/stat-outline.svg");
+
+    &--noted {
+      background-image: url("../img/star.svg");
+    }
+  }
+}

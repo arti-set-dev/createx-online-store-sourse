@@ -1,0 +1,39 @@
+.account {
+  padding: 40px 0 180px;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+
+    @include small-tablet {
+      flex-wrap: wrap-reverse;
+      gap: 40px;
+    }
+  }
+
+  &__content {
+    width: 66%;
+    max-width: 810px;
+
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--gray-900);
+  }
+
+  &__input {
+    padding: 15px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,52 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+  --content-width: 1230px;
+  --content-width-large: 1860px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-large: calc(var(--content-width-large) + (var(--container-offset) * 2));
+  --ui-transition: 0.3s;
+
+  // colors
+  --white: #fff;
+  /* stylelint-disable-next-line color-hex-length */
+  --white-opacity: #ffffff99;
+  --primary: #17696a;
+  --primary-active: #145c5d;
+  --primary-focus: #17696a66;
+  --success: #03cea4;
+  --danger: #ff4242;
+  --warning: #f89828;
+  --info: #5a87fc;
+  --gray-900: #1e212c;
+  --gray-800: #424551;
+  --gray-700: #787a80;
+  --gray-600: #9a9ca5;
+  --gray-500: #b3b7bc;
+  --gray-400: #d7dadd;
+  --gray-300: #e5e8ed;
+  --gray-200: #f4f5f6;
+  --gray-100: #f9f9f9;
+  --black: #000;
+  --brown: #874e19;
+  --turquoise: #c0dded;
+  --light-gray: #d9d9d9;
+  --blue-gray: #c0dded;
+  --yellow: #fcd164;
+  --red: #f75151;
+  --dark-blue: #0c2c7e;
+  --beige: #d8c1ad;
+  --gray: #9a9494;
+  --purple: #a27ac9;
+  --green: #67ba92;
+  --orange: #fb9620;
+  --light: #f1f1f1;
+  --light-green: #1fdf58;
+  --lime: #f2ea2b;
+  --silver: #e5e8ed;
+  --box-shadow: -7px 0 22px -1px rgb(34 60 80 / 20%);
+}

@@ -1,0 +1,81 @@
+.social {
+  display: grid;
+  gap: 12px;
+
+  &__link {
+    @include flex-all-center;
+
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    transition: background-color var(--ui-transition) ease;
+
+    &:active {
+      .social__icon--light {
+        fill: var(--primary);
+      }
+
+      &.social__link--light {
+        background-color: #17696a1a;
+      }
+    }
+
+    &--light {
+      background-color: #787a801a;
+    }
+
+    @include hover {
+      .social__icon--light {
+        fill: var(--primary);
+      }
+
+      &.social__link--light {
+        background-color: #17696a1a;
+      }
+    }
+  }
+
+  &__icon {
+    fill: var(--white);
+    transition: fill var(--ui-transition) ease;
+
+    &--light {
+      fill: var(--gray-700);
+    }
+  }
+
+  &__icon--fb {
+    width: 7px;
+    height: 14px;
+  }
+
+  &__icon--in {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon--tw {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon--yt {
+    width: 17px;
+    height: 16px;
+  }
+
+  &__icon--pt {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon--ln {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon--google {
+    width: 16px;
+    height: 16px;
+  }
+}

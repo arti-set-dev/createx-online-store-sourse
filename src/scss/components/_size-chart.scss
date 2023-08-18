@@ -1,0 +1,38 @@
+.size-chart {
+  @include hide-scrollbar;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+
+  &__accent {
+    display: inline-block;
+    padding: 16px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-900);
+  }
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 650px;
+  }
+
+  &__cell {
+    padding: 16px 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800);
+  }
+
+  &__cell--gray {
+    background-color: var(--gray-200);
+  }
+}

@@ -1,0 +1,17 @@
+.fslightbox-absoluted,
+.fslightbox-full-dimension,
+.fslightbox-flex-centered {
+  div {
+    overflow: hidden;
+  }
+
+  img {
+    width: 500px !important;
+    height: 500px !important;
+
+    @include mobile {
+      width: 290px !important;
+      height: 290px !important;
+    }
+  }
+}

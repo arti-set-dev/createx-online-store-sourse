@@ -1,0 +1,74 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// стили текста
+@import "./components/text";
+
+// ui
+@import "./components/nav";
+@import "./components/select";
+@import "./components/logo";
+@import "./components/inputs";
+@import "./components/btns";
+@import "./components/card";
+@import "./components/timer";
+@import "./components/rating";
+@import "./components/discount";
+@import "./components/social";
+@import "./components/envelope";
+@import "./components/breadcrumbs";
+@import "./components/accordions";
+@import "./components/product-filter";
+@import "./components/range-slider";
+@import "./components/page-nav";
+@import "./components/stepper";
+@import "./components/payment";
+@import "./components/breakdown";
+@import "./components/comments";
+@import "./components/form-payment";
+@import "./components/review";
+@import "./components/account-control";
+@import "./components/profile";
+@import "./components/status";
+@import "./components/blockquote";
+@import "./components/address-card";
+@import "./components/track";
+@import "./components/time-line";
+@import "./components/custom-scroll";
+@import "./components/gallery";
+@import "./components/modal";
+@import "./components/size-chart";
+@import "./components/cart";
+@import "./components/megamenu";
+@import "./components/banner";
+@import "./components/suggest";
+@import "./components/filters";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/arrivals";
+@import "./components/categories";
+@import "./components/products";
+@import "./components/mobile-app";
+@import "./components/advantages";
+@import "./components/follow";
+@import "./components/blog";
+@import "./components/post";
+@import "./components/brands";
+@import "./components/subscribe";
+@import "./components/catalog";
+@import "./components/product";
+@import "./components/checkout";
+@import "./components/account";
+@import "./components/orders";
+@import "./components/wishlist";
+@import "./components/recently";
+@import "./components/reviews";
+@import "./components/single-post";
+@import "./components/new-comment";
+@import "./components/contacts";
+@import "./components/footer";

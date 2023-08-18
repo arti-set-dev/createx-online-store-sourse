@@ -1,0 +1,8 @@
+.logo {
+  @include bg-contain;
+
+  display: block;
+  width: 130px;
+  height: 21px;
+  background-image: url("../img/logo.svg");
+}

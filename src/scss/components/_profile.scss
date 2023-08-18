@@ -1,0 +1,42 @@
+.profile {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__labels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 52px;
+    gap: 25px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__label-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-800);
+  }
+
+  &__input-btn {
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,35 @@
+.wishlist {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include tablet {
+      gap: 15px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 538px;
+  }
+
+  &__card {
+    @include mobile {
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  }
+}

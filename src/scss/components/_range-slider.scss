@@ -1,0 +1,47 @@
+.noUi-target {
+  border: none;
+  height: 2px;
+  box-shadow: none;
+  background: var(--gray-400);
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+
+  &.noUi-handle-lower {
+    right: -14px;
+  }
+
+  &.noUi-handle-upper {
+    right: -1px;
+  }
+}
+
+.noUi-handle {
+  border: 2px solid var(--white);
+  border-radius: 100%;
+  box-shadow: none;
+  background: var(--primary);
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: 173%;
+}
+
+.noUi-tooltip {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 11px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--gray-800);
+}

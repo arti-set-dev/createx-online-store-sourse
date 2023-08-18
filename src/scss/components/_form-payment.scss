@@ -1,0 +1,58 @@
+.form-payment {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 80px 80px -20px rgb(154 156 165 / 8%);
+
+  &__btn {
+    justify-content: flex-start;
+    gap: 20px;
+
+    &.accordion-btn-active {
+      pointer-events: none;
+    }
+
+    @include hover {
+      .btn-radio {
+        border: 2px solid var(--gray-700);
+      }
+    }
+  }
+
+  &__head {
+    display: flex;
+    gap: 21px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    gap: 12px;
+  }
+
+  &__payment {
+    pointer-events: painted;
+    gap: 12px;
+  }
+
+  &__link {
+    width: 48px;
+    height: 26px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 21px;
+
+    &--show {
+      height: auto;
+    }
+  }
+}

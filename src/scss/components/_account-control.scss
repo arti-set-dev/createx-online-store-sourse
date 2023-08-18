@@ -1,0 +1,103 @@
+.account-control {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  width: 30%;
+  max-width: 285px;
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 80px 80px -20px rgb(154 156 165 / 8%);
+  background-color: var(--white);
+
+  &__head {
+    border-bottom: 1px solid var(--gray-300);
+    padding: 20px;
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__accent {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-800);
+  }
+
+  &__inert {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700);
+  }
+
+  &__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--gray-300);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    padding-left: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--gray-800);
+    gap: 10px;
+
+    &--active {
+      background-color: var(--primary);
+      transition: background-color var(--ui-transition) ease;
+
+      .account-control__icon {
+        fill: var(--white);
+      }
+
+      &.account-control__link {
+        color: var(--white);
+      }
+    }
+
+    @include hover {
+      background-color: var(--gray-200);
+
+      &.account-control__link--active {
+        background-color: var(--primary-active);
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--gray-800);
+  }
+
+  &__link-count {
+    margin-left: auto;
+    border-radius: 4px;
+    padding: 0 7px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--white);
+    background-color: var(--warning);
+  }
+
+  @include small-tablet {
+    width: 100%;
+    max-width: 100%;
+  }
+}

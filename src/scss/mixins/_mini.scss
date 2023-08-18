@@ -1,0 +1,165 @@
+/* stylelint-disable */
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-auto {
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-contain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-h-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-all-fs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-all-fe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-all-se {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@mixin image-set($pathToImage) {
+  background-image: url("#{$pathToImage}.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */
+    "#{$pathToImage}.avif"type("image/avif"),
+    "#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.jpg"type("image/jpg")
+  );
+}
+
+@mixin footerToBottom {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+@mixin mr($value) {
+    &:not(:last-child) {
+        margin-right: $value;
+    }
+}
+
+@mixin ml($value) {
+    &:not(:last-child) {
+        margin-left: $value;
+    }
+}
+
+@mixin mb($value) {
+    &:not(:last-child) {
+        margin-bottom: $value;
+    }
+}
+
+@mixin mt($value) {
+    &:not(:last-child) {
+        margin-top: $value;
+    }
+}
+
+@mixin pseudo() {
+    content: "";
+    display: block;
+}
+
+// скорость анимации / вид анимации / время задержки
+@mixin scrollAnimItem($transition, $animation, $delayNum) {
+  transition: transform #{$transition + s} #{$animation} #{$delayNum + s}, opacity #{$transition + s} #{$animation} #{$delayNum + s};
+}
+
+// скорость анимации / вид анимации / количество анимируемых элементов / время задержки / время задержки первого элемента
+@mixin scrollAnimList($transition, $animation, $amount, $delayNum, $delayStartNum) {
+  @for $var from 1 to $amount {
+    $delay: $var * $delayNum;
+    $delayStart: $var * $delay;
+
+    &:nth-child(#{$var}) {
+      @if $delayStartNum==0 {
+        @if $var==1 {
+          transition: transform #{$transition + s} #{$animation} 0s, opacity #{$transition + s} #{$animation} 0s;
+        }
+
+        @else {
+          transition: transform #{$transition + s} #{$animation} #{$delay + s}, opacity #{$transition + s} #{$animation} #{$delay + s};
+        }
+      }
+
+      @if $delayStartNum>0 {
+        @if $var==1 {
+          transition: transform #{$transition + s} #{$animation} #{$delayStartNum + s}, opacity #{$transition + s} #{$animation} #{$delayStartNum + s};
+        } @else {
+          transition: transform #{$transition + s} #{$animation} #{$delayStartNum + $delay + s}, opacity #{$transition + s} #{$animation} #{$delayStartNum + $delay + s};
+        }
+      }
+    }
+  }
+}

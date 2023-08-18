@@ -1,0 +1,24 @@
+.payment {
+  display: flex;
+  gap: 24px;
+
+  &__link {
+    @include bg-contain;
+
+    display: block;
+    width: 120px;
+    height: 64px;
+  }
+
+  &__link--visa {
+    background-image: url("../img/visa.svg");
+  }
+
+  &__link--mastercard {
+    background-image: url("../img/master-card.svg");
+  }
+
+  &__link--paypal {
+    background-image: url("../img/pay-pal.svg");
+  }
+}

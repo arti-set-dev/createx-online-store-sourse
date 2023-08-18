@@ -1,0 +1,92 @@
+.title {
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--gray-900);
+
+  @include mobile {
+    font-size: 34px;
+  }
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--gray-900);
+
+  &[data-old-price] {
+    &::after {
+      content: attr(data-old-price);
+      display: inline-block;
+      padding-left: 13px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-decoration: line-through;
+      color: var(--gray-700);
+    }
+  }
+
+  &[data-old-price="$undefined"] {
+    color: var(--gray-900);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &[data-old-price="$NaN"] {
+    color: var(--gray-900);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &[data-old-price="$null"] {
+    color: var(--gray-900);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &[data-old-price="null"] {
+    color: var(--gray-900);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--big {
+    font-size: 24px;
+  }
+
+  &--red {
+    color: var(--danger);
+  }
+}
+
+.copy-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.notification-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray-900);
+}

@@ -1,0 +1,51 @@
+.time-line {
+  position: relative;
+
+  &::before,
+  &::after {
+    @include pseudo;
+
+    position: absolute;
+  }
+
+  &::before {
+    left: -40px;
+    top: 50%;
+    z-index: 1;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    background-color: var(--gray-500);
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    left: -36.2px;
+    top: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray-500);
+  }
+
+  &--done {
+    &::before {
+      background-color: var(--primary);
+    }
+
+    &::after {
+      background-color: var(--primary);
+    }
+  }
+
+  &--last {
+    &::after {
+      background-color: var(--gray-500);
+    }
+  }
+
+  &--end {
+    &::after {
+      display: none;
+    }
+  }
+}

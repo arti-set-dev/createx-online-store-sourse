@@ -1,0 +1,120 @@
+<header class="header anim-item anim-item--norepeat">
+  <div class="header__top">
+    <div class="container header__container">
+      <a href="tel:+4055550128" class="header__top-text">Available 24/7 at <b>(405) 555-0128</b></a>
+      <nav class="nav header__top-nav" title="Site navigation">
+        <ul class="list-reset nav__list header__top-list">
+          <li class="nav__item header__top-item">
+            <a href="/track.html" class="nav__link header__top-text">Delivery & returns</a>
+          </li>
+          <li class="nav__item header__top-item">
+            <a href="/track.html" class="nav__link header__top-text">Track order</a>
+          </li>
+          <li class="nav__item header__top-item">
+            <a href="/blog.html" class="nav__link header__top-text">Blog</a>
+          </li>
+          <li class="nav__item header__top-item">
+            <a href="/contacts.html" class="nav__link header__top-text">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__auth">
+        <select name="Language selection" class="select select--lang">
+          <option value="eng" selected>Eng / $</option>
+          <option value="de">De / €</option>
+          <option value="ru">Ru / $</option>
+        </select>
+        <button type="button" class="btn-reset header__top-text header__top-text--slash header__top-text--icon" data-modal="login">
+          Log in
+        </button>
+        <button type="button" class="btn-reset header__top-text" data-modal="register">
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__middle anim-item anim-item--norepeat" data-modal-fix>
+    <div class="container header__container header__container--target">
+      <div class="header__middle-left">
+        <a href="/" aria-label="Our website logo header__logo" class="logo header__logo"></a>
+        <div class="overlay" data-menu-overlay></div>
+        <nav class="nav header__middle-nav" title="Menu catalog" data-menu>
+          <ul class="list-reset nav__list header__middle-list">
+            <li class="nav__item header__middle-item">
+              <button type="button" class="btn-reset nav__btn header__middle-btn" data-megamenu>
+                Women
+              </button>
+              @include('megamenu.html', {"banner-image": 'dropdown-image'})
+            </li>
+            <li class="nav__item header__middle-item">
+              <button type="button" class="btn-reset nav__btn header__middle-btn" data-megamenu>
+                Men
+              </button>
+              @include('megamenu.html', {"banner-image": 'hero-image-2'})
+            </li>
+            <li class="nav__item header__middle-item">
+              <button type="button" class="btn-reset nav__btn header__middle-btn" data-megamenu>
+                Girls
+              </button>
+              @include('megamenu.html', {"banner-image": 'hero-image-3'})
+            </li>
+            <li class="nav__item header__middle-item">
+              <button type="button" class="btn-reset nav__btn header__middle-btn" data-megamenu>
+                Boys
+              </button>
+              @include('megamenu.html', {"banner-image": 'dropdown-image'})
+            </li>
+            <li class="nav__item header__middle-item">
+              <button type="button" class="btn-reset nav__btn header__middle-btn header__middle-btn--danger">
+                Sale
+              </button>
+              @include('megamenu.html', {"banner-image": 'hero-image-3'})
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__middle-right">
+        <form action="/" method="get" class="form header__form" data-dynamic-state="header__container--target, 576, last">
+          <input type="search" class="input-reset input header__input" placeholder="Search for products..." aria-label="Product search box" data-product-search>
+          <button type="submit" class="btn-reset btn-search header__form-btn" aria-label="search" data-btn-search></button>
+          <div class="suggest header__suggest">
+            <span class="suggest__desc suggest__not-found">Product not found.</span>
+            <ul class="list-reset suggest__list">
+
+            </ul>
+          </div>
+        </form>
+        <div class="header__purchases">
+          <a href="/wishlist.html" class="wishlist-icon header__wishlist" aria-label="Go to favorites" data-wishlist-count></a>
+          <button type="button" class="btn-reset btn-cart" data-modal="cart" aria-label="Open cart">
+            <span class="btn-cart__count" data-cart-count></span>
+          </button>
+        </div>
+        <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__container header__container--center">
+      <div class="header__slider-container">
+        <button type="button" class="btn-reset swiper-button-prev header__control header__control--prev" aria-label=""></button>
+        <button type="button" class="btn-reset swiper-button-next header__control header__control--next" aria-label=""></button>
+        <div class="swiper header__slider" data-promo-slider>
+          <div class="swiper-wrapper header__slider-wrapper">
+            <div class="swiper-slide header__slider-slide">
+              <span class="header__slider-text"><b>Up to 70% Off.</b> <u>Shop our latest sale styles</u></span>
+            </div>
+            <div class="swiper-slide header__slider-slide">
+              <span class="header__slider-text"><b>Up to 70% Off.</b> <u>Shop our latest sale styles</u></span>
+            </div>
+            <div class="swiper-slide header__slider-slide">
+              <span class="header__slider-text"><b>Up to 70% Off.</b> <u>Shop our latest sale styles</u></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

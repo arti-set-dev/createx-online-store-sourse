@@ -1,0 +1,150 @@
+.choices {
+  margin: 0;
+
+  .choices__inner {
+    border: 1px solid var(--gray-400);
+    border-radius: 4px;
+    padding: 9.5px 11.5px 3.75px;
+    background-color: var(--white);
+  }
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted::after,
+  .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
+    display: none;
+  }
+
+  .choices__item {
+    color: var(--gray-800);
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 30px;
+  }
+
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
+    z-index: 10;
+  }
+
+  &:has(.select[name="quantity"]) {
+    &::after {
+      background-image: url("../img/svg/up-down-select.svg");
+    }
+  }
+
+  &.focus-visible {
+    outline: 1px solid var(--gray-900);
+  }
+}
+
+.choices[data-type*="select-one"]::after {
+  @include bg-auto;
+
+  right: 16.5px;
+  margin: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/down-chevron.svg");
+  transform: translateY(-50%);
+}
+
+/* stylelint-disable-next-line selector-attribute-quotes */
+.choices[data-type*=select-one].is-open::after {
+  margin: 0;
+}
+
+.header {
+  .choices {
+    margin: 0;
+    min-width: 110px;
+  }
+
+  /* stylelint-disable-next-line selector-attribute-quotes */
+  .choices[data-type*="select-one"]::after {
+    @include bg-auto;
+
+    right: 9px;
+    margin: 0;
+    border: none;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/svg/down-chevron.svg");
+    transform: translateY(-50%);
+  }
+
+  .choices__list--single {
+    padding: 4px 11px 4px 12px;
+  }
+
+  .choices__inner {
+    border: none;
+    padding: 0;
+    min-height: auto;
+    background-color: transparent;
+  }
+
+  /* stylelint-disable-next-line selector-attribute-quotes */
+  .choices[data-type*="select-one"] .choices__inner {
+    padding: 0;
+  }
+
+  .choices__item {
+    color: var(--white-opacity);
+  }
+
+  .choices__list--single .choices__item {
+    color: var(--white-opacity);
+    transition: color var(--ui-transition) ease;
+
+    @include hover {
+      color: var(--white);
+    }
+  }
+
+  .choices__item--selectable[data-value] {
+    @include bg-contain;
+
+    padding-left: 32px;
+    background-position: left center;
+    background-size: 20px;
+  }
+
+  .choices__item--choice[data-value] {
+    background-position: 5px center;
+  }
+
+  .choices__item--selectable[data-value="eng"] {
+    background-image: url("../img/flag-usa.svg");
+  }
+
+  .choices__item--selectable[data-value="de"] {
+    background-image: url("../img/flag-de.svg");
+  }
+
+  .choices__item--selectable[data-value="ru"] {
+    background-image: url("../img/ru-icon.svg");
+  }
+
+  .choices__item--choice {
+    color: var(--gray-900);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  /* stylelint-disable-next-line selector-list-comma-newline-after */
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 10px;
+  }
+
+  /* stylelint-disable-next-line selector-list-comma-newline-after */
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
+    border-radius: 3px;
+    width: 100px;
+  }
+}
